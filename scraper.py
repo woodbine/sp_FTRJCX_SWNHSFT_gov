@@ -66,7 +66,7 @@ def validate(filename, file_url):
         return False
     if not validURL:
         print filename, "*Error: Invalid URL*"
-        print file_url
+        print file_url.encode('utf-8')
         return False
     if not validFiletype:
         print filename, "*Error: Invalid filetype*"
